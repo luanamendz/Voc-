@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Vídeo de fundo */
+/* Fundo com vídeo */
 #videoFundo {
   position: fixed;
   top: 0;
@@ -14,7 +14,7 @@
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.15; /* pode ajustar para clarear ou escurecer */
+  opacity: 0.15;
   pointer-events: none;
 }
 
@@ -25,11 +25,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
+  padding-top: 40px;
 }
 
-/* Container do player + arte */
+/* Container principal */
 .container {
   background-color: #111;
   padding: 40px 30px;
@@ -45,10 +46,18 @@ body {
 audio {
   width: 100%;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-/* Área dos bonequinhos */
+/* Frase abaixo do player */
+.frase {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #ddd;
+  font-style: italic;
+}
+
+/* Gifs dançando */
 .arte-container {
   margin-top: 30px;
   display: flex;
