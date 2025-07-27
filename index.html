@@ -2,24 +2,31 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Você</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- 🎥 VÍDEO DE FUNDO -->
+  <!-- Vídeo de fundo -->
   <video autoplay muted loop playsinline id="videoFundo">
     <source src="vídeos/bonequinhos.mp4" type="video/mp4" />
     Seu navegador não suporta vídeos em HTML5.
   </video>
 
-  <!-- 🔘 BOTÃO DE PLAY -->
-  <div class="player-container">
-    <audio id="audioPagode" src="music/Turma do Pagode - Horas Iguais.mp3"></audio>
-    <button id="botaoPlay">&#9654;</button> <!-- símbolo de play ▶ -->
+  <!-- Container do player e arte -->
+  <div class="container">
+    <audio controls id="audioPagode">
+      <source src="music/Turma do Pagode - Horas Iguais.mp3" type="audio/mpeg" />
+      Seu navegador não suporta áudio.
+    </audio>
+
+    <div class="arte-container">
+      <img src="https://i.imgur.com/5Z6Yl1M.gif" alt="pixel dança 1" />
+      <img src="https://i.imgur.com/sLPdUQK.gif" alt="pixel dança 2" />
+      <img src="https://i.imgur.com/vlL52ZZ.gif" alt="pixel dança 3" />
+    </div>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
