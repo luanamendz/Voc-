@@ -3,69 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>você</title>
+  <title></title>
   <style>
     body {
-      background-color: #0f0f0f;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #ccc;
+      font-family: monospace;
       text-align: center;
+      margin: 0;
       padding: 60px 20px;
     }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 40px;
-      color: #ccc;
-    }
-
-    button {
-      background-color: #ff4081;
-      color: white;
+    .botao {
+      background-color: #444;
+      color: #fff;
       border: none;
-      padding: 15px 30px;
-      font-size: 1rem;
-      border-radius: 10px;
+      padding: 14px 28px;
+      font-size: 1.2rem;
+      border-radius: 8px;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: background 0.3s ease;
     }
 
-    button:hover {
-      background-color: #e91e63;
+    .botao:hover {
+      background-color: #666;
     }
 
-    .gif-container {
-      margin-top: 50px;
+    .arte-container {
+      margin-top: 40px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 25px;
+      gap: 20px;
     }
 
-    .gif-container img {
-      width: 160px;
+    .arte-container img {
+      width: 100px;
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #000;
+      image-rendering: pixelated;
     }
   </style>
 </head>
 <body>
-  <h1>você</h1>
-  <p>porque ela gosta...</p>
 
-  <button onclick="tocarMusica()">▶️ Tocar pagode</button>
+  <button class="botao" onclick="tocarMusica()">▶️</button>
   <audio id="musica" src="music/Turma do Pagode - Horas Iguais.mp3"></audio>
 
-  <div class="gif-container">
-    <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="dançando 1">
-    <img src="https://media.giphy.com/media/13UZisxBxkjPwI/giphy.gif" alt="dançando 2">
-    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="dançando 3">
+  <div class="arte-container">
+    <img src="https://i.imgur.com/5Z6Yl1M.gif" alt="pixel dança 1">
+    <img src="https://i.imgur.com/sLPdUQK.gif" alt="pixel dança 2">
+    <img src="https://i.imgur.com/vlL52ZZ.gif" alt="pixel dança 3">
   </div>
 
   <script>
@@ -74,5 +61,6 @@
       audio.play();
     }
   </script>
+
 </body>
 </html>
