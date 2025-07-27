@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -14,29 +14,51 @@
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.15; /* pode ajustar para clarear ou escurecer */
   pointer-events: none;
 }
 
-/* Botão de play (minimalista e centralizado) */
-.player-container {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#botaoPlay {
-  background: none;
-  border: none;
-  font-size: 64px;
+/* Corpo */
+body {
+  background-color: #000;
   color: #ccc;
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-#botaoPlay:hover {
-  transform: scale(1.1);
-  color: #fff;
+/* Container do player + arte */
+.container {
+  background-color: #111;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #ff000040;
+  max-width: 90%;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+/* Player de áudio */
+audio {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Área dos bonequinhos */
+.arte-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.arte-container img {
+  width: 80px;
+  height: auto;
+  image-rendering: pixelated;
 }
