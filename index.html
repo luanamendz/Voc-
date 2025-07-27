@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>você</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #ccc;
+    }
+
+    button {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e91e63;
+    }
+
+    .gif-container {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .gif-container img {
+      width: 160px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>você</h1>
+  <p>porque ela gosta...</p>
+
+  <button onclick="tocarMusica()">▶️ Tocar pagode</button>
+  <audio id="musica" src="music/Turma do Pagode - Horas Iguais.mp3"></audio>
+
+  <div class="gif-container">
+    <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="dançando 1">
+    <img src="https://media.giphy.com/media/13UZisxBxkjPwI/giphy.gif" alt="dançando 2">
+    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="dançando 3">
+  </div>
+
+  <script>
+    function tocarMusica() {
+      const audio = document.getElementById('musica');
+      audio.play();
+    }
+  </script>
+</body>
+</html>
